@@ -1,5 +1,5 @@
 {
-    "name": "laminas/laminas-db",
+    "name": "magento/magento-zf-db",
     "description": "Database abstraction layer, SQL abstraction, result set abstraction, and RowDataGateway and TableDataGateway implementations",
     "license": "BSD-3-Clause",
     "keywords": [
@@ -31,7 +31,7 @@
         }
     },
     "require": {
-        "php": "~8.1.0 || ~8.2.0 || ~8.3.0",
+        "php": "~8.1.0 || ~8.2.0 || ~8.3.0 || ~8.4.0",
         "laminas/laminas-stdlib": "^3.7.1"
     },
     "require-dev": {
@@ -45,6 +45,9 @@
         "laminas/laminas-eventmanager": "Laminas\\EventManager component",
         "laminas/laminas-hydrator": "(^3.2 || ^4.3) Laminas\\Hydrator component for using HydratingResultSets",
         "laminas/laminas-servicemanager": "Laminas\\ServiceManager component"
+    },
+    "replace": {
+      "laminas/laminas-db": "^2.20"
     },
     "autoload": {
         "psr-4": {
